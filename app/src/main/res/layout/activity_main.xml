@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="neu.wangnong.kaona.bookshop.MainActivity"
+    android:background="@drawable/bg800">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sing In"
+            android:id="@+id/button"
+            android:layout_weight="1"
+            android:onClick="clickSinghIn" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:onClick="clickSignUpMain" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:gravity="center_horizontal"
+        android:background="#9bffffff"
+        android:baselineAligned="false">
+
+        <ImageView
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/cion_hight"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo_neu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:id="@+id/textView5"
+            android:textSize="@dimen/h1"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText4"
+            android:hint="User :"
+            android:inputType="text"
+            android:textColorHint="@color/abc_secondary_text_material_light" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText5"
+            android:hint="Password :"
+            android:inputType="textPassword"
+            android:textColorHint="@color/abc_secondary_text_material_light" />
+    </LinearLayout>
+</RelativeLayout>
